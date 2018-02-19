@@ -14,8 +14,8 @@ var appdelegate = UIApplication.shared.delegate as! AppDelegate
 let tab_selected_color = UIColor(red: 133.0/255.0, green: 188.0/255.0, blue: 189.0/255.0, alpha: 1.0)
 
 //define font sizes to be used in the app
-var heading_font_size : CGFloat = 17.0
-var subtitle_font_size : CGFloat = 15.0
+var heading_font_size : CGFloat = 18.0
+var subtitle_font_size : CGFloat = 16.0
 var normal_font_size : CGFloat = 14.0
 var sub_normal_font_size : CGFloat = 13.0
 var minimum_font : CGFloat = 12.0

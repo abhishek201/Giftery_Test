@@ -18,6 +18,8 @@
 		46833D76203864EE00A2D535 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46833D71203864EE00A2D535 /* OrderViewController.swift */; };
 		46833D79203869DA00A2D535 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46833D78203869DA00A2D535 /* Constant.swift */; };
 		46833D7C20386DBC00A2D535 /* jsonresponse.txt in Resources */ = {isa = PBXBuildFile; fileRef = 46833D7B20386DBC00A2D535 /* jsonresponse.txt */; };
+		46B148F9203B2E8C009F57A2 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B148F7203B2E8C009F57A2 /* EventTableViewCell.swift */; };
+		46B148FA203B2E8C009F57A2 /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46B148F8203B2E8C009F57A2 /* EventTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		46833D71203864EE00A2D535 /* OrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		46833D78203869DA00A2D535 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		46833D7B20386DBC00A2D535 /* jsonresponse.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jsonresponse.txt; sourceTree = "<group>"; };
+		46B148F7203B2E8C009F57A2 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		46B148F8203B2E8C009F57A2 /* EventTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,7 @@
 		46833D6C203864D100A2D535 /* TabbarController */ = {
 			isa = PBXGroup;
 			children = (
+				46B148F2203B2E3C009F57A2 /* EventCell */,
 				46833D6E203864ED00A2D535 /* EventViewController.swift */,
 				46833D71203864EE00A2D535 /* OrderViewController.swift */,
 				46833D6D203864ED00A2D535 /* GiftViewController.swift */,
@@ -104,6 +109,15 @@
 				46833D78203869DA00A2D535 /* Constant.swift */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		46B148F2203B2E3C009F57A2 /* EventCell */ = {
+			isa = PBXGroup;
+			children = (
+				46B148F7203B2E8C009F57A2 /* EventTableViewCell.swift */,
+				46B148F8203B2E8C009F57A2 /* EventTableViewCell.xib */,
+			);
+			path = EventCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +179,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46B148FA203B2E8C009F57A2 /* EventTableViewCell.xib in Resources */,
 				46833D6B203864CA00A2D535 /* Main.storyboard in Resources */,
 				46833D622038646200A2D535 /* LaunchScreen.storyboard in Resources */,
 				46833D5F2038646200A2D535 /* Assets.xcassets in Resources */,
@@ -179,6 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46B148F9203B2E8C009F57A2 /* EventTableViewCell.swift in Sources */,
 				46833D79203869DA00A2D535 /* Constant.swift in Sources */,
 				46833D75203864EE00A2D535 /* MeViewController.swift in Sources */,
 				46833D74203864EE00A2D535 /* TabBarViewController.swift in Sources */,
