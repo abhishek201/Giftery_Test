@@ -9,8 +9,10 @@
 import Foundation
 import UIKit
 
+// Appdelegate variable
 var appdelegate = UIApplication.shared.delegate as! AppDelegate
 
+//tab bar selected color
 let tab_selected_color = UIColor(red: 133.0/255.0, green: 188.0/255.0, blue: 189.0/255.0, alpha: 1.0)
 
 //define font sizes to be used in the app
@@ -24,20 +26,21 @@ var minimum_font : CGFloat = 12.0
 var regular_font : String = "AvenirNext-Regular"
 var bold_font : String = "AvenirNext-Bold"
 
-
+//tab bar images
 let event_image = UIImage(named: "icon1") as! UIImage
 let event_image_selected = UIImage(named: "icon1-selected") as! UIImage
-
 let orders_image = UIImage(named: "icon2") as! UIImage
 let orders_image_selected = UIImage(named: "icon2-selected") as! UIImage
-
 let gift_image = UIImage(named: "icon3") as! UIImage
-
 let me_image = UIImage(named: "icon4") as! UIImage
 let me_image_selected = UIImage(named: "icon4-selected")  as! UIImage
 
+//MARK:- Common class
+// this class is used to define common function in the app.
 class CommonValidations: NSObject
 {
+    //MARK:- functions
+    // this function is used to read json file from the bundle
     func readJsonFileFromBundle(file_name : NSString) -> NSMutableArray
     {
         var gift_array = NSMutableArray()
@@ -74,6 +77,7 @@ class CommonValidations: NSObject
          }
         return NSMutableArray()
     }
+    // this function is used to calculate time
     func timeCal (_ start:Date) -> String
     {
         let dateFormatter = DateFormatter()
@@ -161,6 +165,7 @@ class CommonValidations: NSObject
     }
         return ago_date
     }
+    // this function is used to convert one date format to another
     func convertDateFormatter(date: String, format_final : String, format_start : String) -> String
     {
         let dateFormatter = DateFormatter()

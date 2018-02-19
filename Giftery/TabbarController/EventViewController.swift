@@ -10,10 +10,15 @@ import UIKit
 
 class EventViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
+    //MARK:- variable declaration
+    // declare all variables for the class
+    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var plusButton: UIButton!
     var array_events = NSMutableArray()
     var cellReuseIdentifier = "eventCell"
+    
+    //MARK:- class functions
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,6 +35,8 @@ class EventViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    //MARK:- tableview functions
+    // tableview delegates and datasource
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         var cell = tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier) as! EventTableViewCell

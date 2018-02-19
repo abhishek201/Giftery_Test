@@ -10,10 +10,11 @@ import UIKit
 
 class EventTableViewCell: UITableViewCell {
     
+    //MARK:- functions
+    // this function is used to set the data for the event cell
     func setData(event_dic : NSDictionary)
     {
         let view_background = self.viewWithTag(200) as! UIView
-        
         var person_name_blank = false
         let person_name = self.viewWithTag(1) as! UILabel
         let occasion_name = self.viewWithTag(2) as! UILabel
@@ -126,6 +127,7 @@ class EventTableViewCell: UITableViewCell {
         }
         
     }
+    //MARK:- class functions
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -133,7 +135,6 @@ class EventTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
         // Configure the view for the selected state
     }
     

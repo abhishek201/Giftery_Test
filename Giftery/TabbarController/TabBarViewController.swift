@@ -10,7 +10,14 @@ import UIKit
 
 class TabBarViewController: UITabBarController {
 
+    //MARK:- variable declaration
+    // declare all variables for the class
+    
     var centerButton: UIButton!
+    
+    //MARK:- variable declaration
+    // declare all variables for the class
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -21,7 +28,8 @@ class TabBarViewController: UITabBarController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    //MARK:- functions
+    // Add raised button on tab bar
     func addCenterRaisedButton(buttonImage: UIImage, highlightedButtonImage: UIImage) {
         centerButton = UIButton(type: .custom)
         centerButton.frame = CGRect(x: 0, y: 0, width: 68, height: 68)
@@ -51,12 +59,14 @@ class TabBarViewController: UITabBarController {
         centerButton.backgroundColor = tab_selected_color
         centerButton.layer.cornerRadius = centerButton.frame.size.width/2
     }
+    // Center button action
     @objc func centerButtonPressed(_ sender: UIButton) {
         self.selectedIndex = 2
         sender.isSelected = true
     }
 }
-/* UITabBarDelegate */
+//MARK:- UITabBar Extension
+// UITabBarDelegate
 extension TabBarViewController {
     override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
         if self.tabBarController?.selectedIndex != 2 {
